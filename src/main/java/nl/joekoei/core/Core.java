@@ -1,4 +1,4 @@
-package eu.magicparksmc.waltdisneyworld.core;
+package nl.joekoei.core;
 
 import nl.joekoei.ridecounter.*;
 

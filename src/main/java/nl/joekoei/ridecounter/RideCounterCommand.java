@@ -6,7 +6,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import eu.magicparksmc.waltdisneyworld.core.Core;
+import nl.joekoei.core.Core;
 
 public class RideCounterCommand implements CommandExecutor {
 

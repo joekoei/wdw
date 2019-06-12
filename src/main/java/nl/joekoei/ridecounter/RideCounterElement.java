@@ -3,7 +3,7 @@ package nl.joekoei.ridecounter;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import eu.magicparksmc.waltdisneyworld.core.Core;
+import nl.joekoei.core.Core;
 
 import java.io.File;
 import java.io.FileWriter;
