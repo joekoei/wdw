@@ -1,0 +1,13 @@
+name: waltdisneyworld
+version: 1.0
+main: nl.joekoei.CorePlugin.Core
+api-version: 1.13
+commands:
+  ridecounter:
+    description: HAHAHA
+  magicband:
+    description: oofie poofie
+  control:
+    description: Oofie Poofie
+  spacemountain:
+    description: oof poof

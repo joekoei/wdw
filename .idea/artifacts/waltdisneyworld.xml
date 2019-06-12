@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="waltdisneyworld">
+    <output-path>$PROJECT_DIR$/out/artifacts/waltdisneyworld</output-path>
+    <root id="archive" name="waltdisneyworld.jar">
+      <element id="module-output" name="cpc2" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
