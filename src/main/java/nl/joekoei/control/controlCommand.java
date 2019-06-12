@@ -67,6 +67,10 @@ public class controlCommand implements CommandExecutor
                         sender.sendMessage("");
                         sender.sendMessage(ChatColor.RED + "--=-=--");
 
+                    } else if (args[0].equalsIgnoreCase("panels")) {
+                        controlBuilder m = new controlBuilder();
+                        Player player = (Player) sender;
+                        player.openInventory(m.getMenu());
                     }
                 }
             }
