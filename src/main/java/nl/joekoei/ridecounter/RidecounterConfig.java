@@ -2,7 +2,9 @@ package nl.joekoei.ridecounter;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import nl.joekoei.CorePlugin.Core;
+
+import eu.magicparksmc.waltdisneyworld.core.Core;
+
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 
