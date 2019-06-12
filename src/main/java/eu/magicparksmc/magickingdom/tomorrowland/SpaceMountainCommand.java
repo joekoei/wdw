@@ -18,15 +18,13 @@ public class SpaceMountainCommand implements CommandExecutor {
 					if (args[0].equalsIgnoreCase("power")) {
 						Bukkit.broadcastMessage(args[0]);
 						SpaceMountainBuilder m = new SpaceMountainBuilder();
-						if (m.getMenu().getItem(1).getType().equals(Material.RED_CONCRETE)) {
+						if (m.getMenu().getItem(1).getType() == Material.RED_CONCRETE) {
+							sender.sendMessage(ChatColor.RED + "Werkt opzich");
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");
 							m.getMenu().getItem(1).setType(Material.GREEN_CONCRETE);
-							// TODO: Setten van de title ("ON")
-							/**
-							 * ArrayList lore = new ArrayList(); lore.add("ON");
-							 * m.getMenu().getItem(1).setType(Material.GREEN_CONCRETE);
-							 * m.getMenu().getItem(1).getItemMeta().setLore(lore);
-							 */
-						} else if (m.getMenu().getItem(1).getType().equals(Material.GREEN_CONCRETE)) {
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");
+
+						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
 							// TODO: Setten van de title ("OFF")
 							/**
@@ -38,7 +36,6 @@ public class SpaceMountainCommand implements CommandExecutor {
 					}
 				}
 			} else {
-				// XXX: Deze vorm van 'No permission' prima?
 				sender.sendMessage(
 						ChatColor.RED + "Hey!" + ChatColor.GRAY + "You have no permission to perform this action");
 			}

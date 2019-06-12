@@ -43,7 +43,6 @@ public class ControlCommand implements CommandExecutor
                         SpaceMountainBuilder m = new SpaceMountainBuilder();
                         Player player = (Player) sender;
                         player.openInventory(m.getMenu());
-
                     } else if (args[0].equalsIgnoreCase("splash")) {
                         SplashMountainBuilder m = new SplashMountainBuilder();
                         Player player = (Player) sender;

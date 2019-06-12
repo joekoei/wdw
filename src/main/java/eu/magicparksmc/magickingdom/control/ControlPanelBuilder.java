@@ -17,6 +17,7 @@ public class ControlPanelBuilder {
         ArrayList lore = new ArrayList();
         lore.add("Splash Mountain");
         i.getItemMeta().setLore(lore);
+        i.getItemMeta().setDisplayName("Splash Mountain");
     }
 
     public Inventory getMenu(){

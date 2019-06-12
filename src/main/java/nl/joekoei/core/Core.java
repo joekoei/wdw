@@ -42,6 +42,7 @@ public final class Core extends JavaPlugin {
 
     private void Events() {
         Bukkit.getPluginManager().registerEvents(new MagicBandListener(), this);
+        Bukkit.getPluginManager().registerEvents(new SpaceMountainListener(), this);
     }
 
     @Override

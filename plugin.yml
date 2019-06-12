@@ -1,6 +1,6 @@
 name: waltdisneyworld
 version: 1.0
-main: nl.joekoei.CorePlugin.Core
+main: nl.joekoei.core.Core
 api-version: 1.13
 commands:
   ridecounter:
