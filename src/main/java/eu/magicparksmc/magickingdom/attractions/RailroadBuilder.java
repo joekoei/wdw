@@ -17,16 +17,4 @@ public class RailroadBuilder {
 	public Inventory getMenu() {
 		return menu;
 	}
-
-	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-		Player p = (Player) sender;
-		if (command.getName().equalsIgnoreCase("parktrain")) {
-			if (args.length == 0) {
-				sender.sendMessage(ChatColor.DARK_RED + "Error!" + ChatColor.RED + " Use missing arguments");
-			} else if (args.length == 1 && args[0].equalsIgnoreCase("operate")) {
-				p.openInventory(menu);
-			}
-		}
-		return false;
-	}
 }

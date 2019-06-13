@@ -7,9 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7426cf7d-0d7a-4640-ac14-a71296f83ef9" name="Default Changelist" comment="Nu blijft iedereen met zn klauwe van de Names.&#10;Anders delete ik heel deze repo gewoon.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareRiverboatBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/waltdisneyworld/waltdisneyworld.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/waltdisneyworld/waltdisneyworld.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/attractions/RailroadBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/attractions/RailroadBuilder.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,46 +23,12 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/frontierland/FrontierList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareRiverboatBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/attractions/RailroadBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#383#384#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#513#514#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/PiratesBuilder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            <state relative-caret-position="216">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -82,7 +48,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/nl/joekoei/menuCommand/menuCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/joekoei/chat/scheldEvents.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/joekoei/staffCommands/gmCommands.java" />
         <option value="$PROJECT_DIR$/src/main/java/nl/joekoei/guestEvents/guestCommand.java" />
@@ -133,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/control/ControlCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/magicparksmc/waltdisneyworld/fastpass/fastpassInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareRiverboatBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/attractions/RailroadBuilder.java" />
       </list>
     </option>
   </component>
@@ -156,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,13 +143,6 @@
             <path>
               <item name="cpc2" type="b2602c69:ProjectViewProjectNode" />
               <item name="cpc2" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="waltdisneyworld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cpc2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cpc2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -226,7 +183,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="magicparksmc" type="462c0819:PsiDirectoryNode" />
               <item name="magickingdom" type="462c0819:PsiDirectoryNode" />
-              <item name="frontierland" type="462c0819:PsiDirectoryNode" />
+              <item name="attractions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cpc2" type="b2602c69:ProjectViewProjectNode" />
@@ -269,6 +226,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -400,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1560358460495</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Nu blijft iedereen met zn klauwe van de Names.&#10;Anders delete ik heel deze repo gewoon.">
+      <created>1560359201709</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1560359201709</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -412,7 +378,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31876332" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32249466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -447,7 +413,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Nu blijft iedereen met zn klauwe van de Names.&#10;Anders delete ik heel deze repo gewoon." />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/nl/joekoei/rnrc/rnrcCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/joekoei/rnrc/rnrc.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/joekoei/guestEvents/guest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/nl/joekoei/Ranks/Ranks.java" />
@@ -639,6 +604,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/frontierland/FrontierList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -653,13 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/libertysquare/LibertySquareRiverboatBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -671,6 +636,13 @@
             <element signature="e#485#486#0" expanded="true" />
             <element signature="e#513#514#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/eu/magicparksmc/magickingdom/attractions/RailroadBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
