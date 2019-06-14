@@ -2,19 +2,43 @@ package eu.magicparksmc.magickingdom.tomorrowland;
 
 public class TomorrowlandList {
 	enum tomorrowland {
-		NULL;
+		STAR_TRADERS("Mickey's Star Traders");
+		String tomorrowlandName;
+
+		tomorrowland(String name) {
+			this.tomorrowlandName = name;
+		}
 	}
 
 	enum tomorrowlandRides {
-		TOMORROWLAND_SPEEDWAY, SPACE_MOUNTAIN, ASTRO_ORBITER, PEOPLEMOVER, BUZZ_LIGHTYEARS_SPACE_RANGER_SPIN;
+		TOMORROWLAND_SPEEDWAY("Tomorrowland Speedway"), SPACE_MOUNTAIN("Space Mountain"),
+		ASTRO_ORBITER("Astro Orbiter"), PEOPLEMOVER("Tomorrowland Transit Authority PeopleMover"),
+		SPACE_RANGER_SPIN("Buzz Lightyear's Space Ranger Spin");
+		String tomorrowlandName;
+
+		tomorrowlandRides(String name) {
+			this.tomorrowlandName = name;
+		}
 	}
 
 	enum tomorrowlandAttractions {
-		WALT_DISNEYS_CARROUSEL_OF_PROGRESS, MONSTERS_INC_LAUGH_FLOOR, STITCHS_GREAT_ESCAPE;
+		CARROUSEL_OF_PROGRESS("Walt Disney's Carrousel of Progress"),
+		MONSTERS_INC_LAUGH_FLOOR("Monsters, Inc. Laugh Floor");
+		String tomorrowlandName;
+
+		tomorrowlandAttractions(String name) {
+			this.tomorrowlandName = name;
+		}
 	}
 
 	enum tomorrowlandRestaurants {
-		COSMIC_RAYS_STARLIGHT_CAFE, AUNTIE_GRAVITYS_GALACTIC_GOODIES, COOL_SHIP, THE_LUNCHING_PAD,
-		TOMORROWLAND_TERRACE_RESTAURANT;
+		STARLIGHT_CAFE("Cosmic Ray's Starlight Café"), GALACTIC_GOODIES("Auntie Gravity's Galactic Goodies"),
+		COOL_SHIP("Cool Ship"), THE_LUNCHING_PAD("The Lunching Pad"),
+		TERRACE_RESTAURANT("Tomorrowland Terrace Restaurant");
+		String tomorrowlandName;
+
+		tomorrowlandRestaurants(String name) {
+			this.tomorrowlandName = name;
+		}
 	}
 }
