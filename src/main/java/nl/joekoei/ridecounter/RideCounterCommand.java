@@ -9,7 +9,6 @@ import org.bukkit.entity.Player;
 import nl.joekoei.core.Core;
 
 public class RideCounterCommand implements CommandExecutor {
-
     @Override
     public boolean onCommand(CommandSender sender, Command command, String s, String[] args) {
         if (command.getName().equalsIgnoreCase("ridecounter")) {

@@ -6,8 +6,8 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 
 public class SpaceMountainListener implements Listener {
-
-    @EventHandler
+    @SuppressWarnings("deprecation")
+	@EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
         Inventory i = e.getClickedInventory();
         SpaceMountainBuilder m = new SpaceMountainBuilder();
@@ -18,5 +18,4 @@ public class SpaceMountainListener implements Listener {
             }
         }
     }
-
 }

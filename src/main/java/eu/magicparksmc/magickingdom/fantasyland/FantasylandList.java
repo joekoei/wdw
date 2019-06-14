@@ -1,6 +1,23 @@
 package eu.magicparksmc.magickingdom.fantasyland;
 
-public enum FantasylandList {
-	The_Barnstormer, Dumbo_the_Flying_Elephant, its_a_Small_World, Mad_Tea_Party, Winnie_the_Pooh, Peter_Pans_Flight,
-	Carrousel, Seven_Dwarfs_Mine_Train, Journey_of_the_Little_Mermaid;
+public class FantasylandList {
+	enum fantasyland {
+		BIBBIDI_BOBBIDI_BOUTIQUE, BIG_TOP_SOUVENIRS;
+	}
+
+	enum fantasylandRides {
+		ITS_A_SMALL_WORLD, PETER_PANS_FLIGHT, PRINCE_CHARMING_REGAL_CARROUSEL, THE_MANY_ADVENTURES_OF_WINNIE_THE_POOH,
+		MAD_TEA_PARTY, SEVEN_DWARFS_MINE_TRAIN, JOURNEY_OF_THE_LITTLE_MERMAID, DUMBO_THE_FLYING_ELEPHANT,
+		WALT_DISNEY_WORLD_RAILROAD, THE_BARNSTORMER;
+	}
+
+	enum fantasylandAttractions {
+		MICKEYS_PHILHARMAGIC, ENCHANTED_TALES_WITH_BELLE, PRINCESS_FAIRYTALE_HALL, FAIRYTALE_GARDEN, ARIELS_GROTTO,
+		CASEY_JR_SPLASH_N_SOAK_STATION, PETES_SILLY_SIDESHOW;
+	}
+
+	enum fantasylandRestaurants {
+		PINOCCHIO_VILLAGE_HAUS, CINDERELLAS_ROYAL_TABLE, THE_FRIARS_NOOK, STORYBOOK_TREATS, BE_OUR_GUEST_RESTAURANT,
+		GASTONS_TAVERN, CHESHIRE_CAFE, PRINCE_ERICS_VILLAGE_MARKET;
+	}
 }
