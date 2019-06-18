@@ -3,7 +3,7 @@ package eu.magicparksmc.magickingdom.fantasyland;
 public class FantasylandList {
 	enum fantasyland {
 		BIBBIDI_BOBBIDI_BOUTIQUE("Bibbidi Bobbidi Boutique"), BIG_TOP_SOUVENIRS("Big Top Souvenirs"),
-		FANTASY_FAIR("Fantasy Faire");
+		FANTASY_FAIRE("Fantasy Faire");
 		String fantasylandName;
 
 		fantasyland(String name) {
