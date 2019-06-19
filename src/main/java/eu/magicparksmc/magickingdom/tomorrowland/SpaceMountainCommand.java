@@ -1,5 +1,6 @@
 package eu.magicparksmc.magickingdom.tomorrowland;
 
+import eu.magicparksmc.magickingdom.status.StatusBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -8,6 +9,9 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 public class SpaceMountainCommand implements CommandExecutor {
+
+	public static String spacemountain;
+
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("spacemountain")) {
@@ -26,14 +30,16 @@ public class SpaceMountainCommand implements CommandExecutor {
 
 						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
-							// TODO: Setten van de title ("OFF")
-							/**
-							 * ArrayList lore = new ArrayList(); lore.add("OFF");
-							 * m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
-							 * m.getMenu().getItem(1).getItemMeta().setLore(lore);
-							 */
 						}
 					}
+
+					if (args[0].equalsIgnoreCase("status")) {
+						StatusBuilder s = new StatusBuilder();
+						if(spacemountain == null) {
+							spacemountain = s.getClosed();
+						}
+					}
+
 				}
 			} else {
 				sender.sendMessage(

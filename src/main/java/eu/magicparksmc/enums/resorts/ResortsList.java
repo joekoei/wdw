@@ -1,4 +1,4 @@
-package eu.magicparksmc.magickingdom.resorts;
+package eu.magicparksmc.enums.resorts;
 
 public class ResortsList {
     enum wideWorldSportsResorts {
