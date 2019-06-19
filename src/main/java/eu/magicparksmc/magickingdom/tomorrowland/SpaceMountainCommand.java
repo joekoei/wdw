@@ -38,8 +38,8 @@ public class SpaceMountainCommand implements CommandExecutor {
 					Map<String, StatusBuilder> status = new HashMap<>();
 					String currentStatus = "closed";
 					status.put("opened", new StatusBuilder("opened"));
-					status.put("closed", new StatusBuilder("blalala"));
-					status.put("maintenance", new StatusBuilder("balaada"));
+					status.put("closed", new StatusBuilder("closed"));
+					status.put("maintenance", new StatusBuilder("maintenance"));
 						if (args[0].equalsIgnoreCase("status")) {
 							Bukkit.broadcastMessage(currentStatus);
 							if (!status.get(currentStatus).currentStatus) {
