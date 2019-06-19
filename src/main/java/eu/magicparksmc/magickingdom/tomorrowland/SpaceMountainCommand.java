@@ -40,18 +40,23 @@ public class SpaceMountainCommand implements CommandExecutor {
 					status.put("opened", new StatusBuilder("opened"));
 					status.put("closed", new StatusBuilder("blalala"));
 					status.put("maintenance", new StatusBuilder("balaada"));
-					if (!status.get(currentStatus).currentStatus) {
 						if (args[0].equalsIgnoreCase("status")) {
+							Bukkit.broadcastMessage(currentStatus);
+							if (!status.get(currentStatus).currentStatus) {
 							StatusBuilder s = new StatusBuilder(currentStatus);
 							if (spacemountain == null) {
 								spacemountain = s.getClosed();
 								changeStatus(s);
-							} else if (spacemountain == "opened") {
+								Bukkit.broadcastMessage(spacemountain + " 1");
+								Bukkit.broadcastMessage(currentStatus);
+							} else if (currentStatus == "closed") {
 								spacemountain = s.getOpened();
 								changeStatus(s);
-							} else if (spacemountain == "maintenance") {
-								spacemountain = s.getMaintenance();
+								Bukkit.broadcastMessage(spacemountain + " 2");
+							} else if (currentStatus == "opened") {
+								spacemountain = s.getClosed();
 								changeStatus(s);
+								Bukkit.broadcastMessage(spacemountain + " 3");
 							}
 						}
 					}
@@ -67,6 +72,13 @@ public class SpaceMountainCommand implements CommandExecutor {
 	private void changeStatus(StatusBuilder status) {
 		if (status == null) {
 			status.getClosed();
+			Bukkit.broadcastMessage(status + "");
+		} else if (status.toString() == ChatColor.RED + "Closed") {
+			status.getOpened();
+			Bukkit.broadcastMessage(status + "");
+		} else if (status.toString() == ChatColor.GREEN + "Opened") {
+			status.getClosed();
+			Bukkit.broadcastMessage(status + "");
 		}
 	}
 }
