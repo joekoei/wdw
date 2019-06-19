@@ -1,6 +1,10 @@
 package eu.magicparksmc.magickingdom.tomorrowland;
 
 import eu.magicparksmc.magickingdom.status.StatusBuilder;
+
+import java.util.HashMap;
+import java.util.Map;
+
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -9,7 +13,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 public class SpaceMountainCommand implements CommandExecutor {
-
 	public static String spacemountain;
 
 	@Override
@@ -32,14 +35,26 @@ public class SpaceMountainCommand implements CommandExecutor {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
 						}
 					}
-
-					if (args[0].equalsIgnoreCase("status")) {
-						StatusBuilder s = new StatusBuilder();
-						if(spacemountain == null) {
-							spacemountain = s.getClosed();
+					Map<String, StatusBuilder> status = new HashMap<>();
+					String currentStatus = "closed";
+					status.put("opened", new StatusBuilder("opened"));
+					status.put("closed", new StatusBuilder("blalala"));
+					status.put("maintenance", new StatusBuilder("balaada"));
+					if (!status.get(currentStatus).currentStatus) {
+						if (args[0].equalsIgnoreCase("status")) {
+							StatusBuilder s = new StatusBuilder(currentStatus);
+							if (spacemountain == null) {
+								spacemountain = s.getClosed();
+								changeStatus(s);
+							} else if (spacemountain == "opened") {
+								spacemountain = s.getOpened();
+								changeStatus(s);
+							} else if (spacemountain == "maintenance") {
+								spacemountain = s.getMaintenance();
+								changeStatus(s);
+							}
 						}
 					}
-
 				}
 			} else {
 				sender.sendMessage(
@@ -47,5 +62,11 @@ public class SpaceMountainCommand implements CommandExecutor {
 			}
 		}
 		return false;
+	}
+
+	private void changeStatus(StatusBuilder status) {
+		if (status == null) {
+			status.getClosed();
+		}
 	}
 }
