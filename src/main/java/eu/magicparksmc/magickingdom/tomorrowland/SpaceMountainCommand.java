@@ -26,10 +26,15 @@ public class SpaceMountainCommand implements CommandExecutor {
 						Bukkit.broadcastMessage(args[0]);
 						SpaceMountainBuilder m = new SpaceMountainBuilder();
 						if (m.getMenu().getItem(1).getType() == Material.RED_CONCRETE) {
-							sender.sendMessage(ChatColor.RED + "Werkt opzich");
-							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");
+							sender.sendMessage(ChatColor.RED + "Werkt opzich"); // <- Gaat er nog iets veranderen aan
+																				// deze logger?
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");// <- Gaat er nog
+																									// iets veranderen
+																									// aan deze logger?
 							m.getMenu().getItem(1).setType(Material.GREEN_CONCRETE);
-							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");// <- Gaat er nog iets
+																									// veranderen aan
+																									// deze logger?
 
 						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
@@ -40,9 +45,9 @@ public class SpaceMountainCommand implements CommandExecutor {
 					status.put("opened", new StatusBuilder("opened"));
 					status.put("closed", new StatusBuilder("closed"));
 					status.put("maintenance", new StatusBuilder("maintenance"));
-						if (args[0].equalsIgnoreCase("status")) {
-							Bukkit.broadcastMessage(currentStatus);
-							if (!status.get(currentStatus).currentStatus) {
+					if (args[0].equalsIgnoreCase("status")) {
+						Bukkit.broadcastMessage(currentStatus);
+						if (!status.get(currentStatus).currentStatus) {
 							StatusBuilder s = new StatusBuilder(currentStatus);
 							if (spacemountain == null) {
 								spacemountain = s.getClosed();
