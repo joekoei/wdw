@@ -11,13 +11,13 @@ public class MagicBandBuilder {
     private Inventory menu;
 
     public MagicBandBuilder() {
-        menu = Bukkit.createInventory(null, 9, "MagicBand");
+        menu = Bukkit.createInventory(null, 9, "Magic Band");
         final ItemStack i = new ItemStack(Material.TRIPWIRE_HOOK, 1);
         final ItemMeta m = i.getItemMeta();
         m.setDisplayName("Regions");
         i.setItemMeta(m);
 
-        menu.setItem(3, i);
+        menu.setItem(0, i);
     }
 
     public Inventory getMenu() {
