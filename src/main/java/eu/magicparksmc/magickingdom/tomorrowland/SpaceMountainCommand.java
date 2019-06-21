@@ -26,15 +26,10 @@ public class SpaceMountainCommand implements CommandExecutor {
 						Bukkit.broadcastMessage(args[0]);
 						SpaceMountainBuilder m = new SpaceMountainBuilder();
 						if (m.getMenu().getItem(1).getType() == Material.RED_CONCRETE) {
-							sender.sendMessage(ChatColor.RED + "Werkt opzich"); // <- Gaat er nog iets veranderen aan
-																				// deze logger?
-							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");// <- Gaat er nog
-																									// iets veranderen
-																									// aan deze logger?
+							sender.sendMessage(ChatColor.RED + "Werkt opzich");
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");
 							m.getMenu().getItem(1).setType(Material.GREEN_CONCRETE);
-							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");// <- Gaat er nog iets
-																									// veranderen aan
-																									// deze logger?
+							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");
 
 						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);

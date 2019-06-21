@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
 
@@ -13,10 +14,12 @@ public class ControlPanelBuilder {
 	public ControlPanelBuilder() {
 		menu = Bukkit.createInventory(null, 18, "Control Panels");
 		ItemStack i = new ItemStack(Material.ACACIA_BOAT);
+		ItemMeta m = i.getItemMeta();
 		ArrayList lore = new ArrayList();
-		lore.add("Splash Mountain");
-		i.getItemMeta().setLore(lore);
-		i.getItemMeta().setDisplayName("Splash Mountain");
+		lore.add("Control Panel");
+		m.setLore(lore);
+		m.setDisplayName("Splash Mountain");
+		i.setItemMeta(m);
 	}
 
 	public Inventory getMenu() {
