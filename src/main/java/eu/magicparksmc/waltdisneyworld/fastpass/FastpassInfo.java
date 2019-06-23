@@ -1,10 +1,9 @@
 package eu.magicparksmc.waltdisneyworld.fastpass;
 
-public class fastpassInfo {
-
+public class FastpassInfo {
     private String m;
 
-    public fastpassInfo(){
+    public FastpassInfo(){
         m = "Fastpass is not available Yet";
     }
 

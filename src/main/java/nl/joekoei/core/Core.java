@@ -34,7 +34,7 @@ public final class Core extends JavaPlugin {
         this.getCommand("ridecounter").setExecutor(new RideCounterCommand());
         this.getCommand("magicband").setExecutor(new MagicBandCommand());
         this.getCommand("control").setExecutor(new ControlCommand());
-        this.getCommand("ride").setExecutor(new infoCommand());
+        this.getCommand("ride").setExecutor(new InfoCommand());
     }
 
     private void attractions() {

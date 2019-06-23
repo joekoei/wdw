@@ -1,6 +1,6 @@
 package eu.magicparksmc.waltdisneyworld.magicband;
 
-import eu.magicparksmc.waltdisneyworld.regions.regionsBuilder;
+import eu.magicparksmc.waltdisneyworld.regions.RegionsBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
@@ -15,7 +15,7 @@ public class MagicBandListener implements Listener {
                 if (e.isRightClick() || e.isLeftClick()) {
                     e.setCancelled(true);
                     if (e.getCurrentItem().getType().equals(Material.TRIPWIRE_HOOK)) {
-                        regionsBuilder m = new regionsBuilder();
+                        RegionsBuilder m = new RegionsBuilder();
                         e.getWhoClicked().closeInventory();
                         e.getWhoClicked().openInventory(m.getMenu());
                     }
