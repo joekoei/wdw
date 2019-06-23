@@ -1,4 +1,4 @@
-package eu.magicparksmc.magickingdom.tomorrowland;
+package eu.magicparksmc.enums.magickingdom;
 
 public class TomorrowlandList {
 	enum tomorrowland {

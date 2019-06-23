@@ -11,6 +11,8 @@ import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 public class SpaceMountainCommand implements CommandExecutor {
 	public static String spacemountain;
@@ -28,7 +30,11 @@ public class SpaceMountainCommand implements CommandExecutor {
 						if (m.getMenu().getItem(1).getType() == Material.RED_CONCRETE) {
 							sender.sendMessage(ChatColor.RED + "Werkt opzich");
 							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Voor de set");
-							m.getMenu().getItem(1).setType(Material.GREEN_CONCRETE);
+							final ItemStack open = new ItemStack(Material.GREEN_CONCRETE);
+							final ItemMeta openn = open.getItemMeta();
+							openn.setDisplayName(ChatColor.GREEN + "Opened");
+							open.setItemMeta(openn);
+							m.getMenu().setItem(1,open);
 							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");
 
 						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {

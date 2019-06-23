@@ -14,12 +14,20 @@ public class MagicBandListener implements Listener {
         if (e.getClickedInventory().getTitle().equalsIgnoreCase("magic band")) {
                 if (e.isRightClick() || e.isLeftClick()) {
                     e.setCancelled(true);
-                    if (e.getCurrentItem().getData().equals(Material.TRIPWIRE_HOOK)) {
+                    if (e.getCurrentItem().getType().equals(Material.TRIPWIRE_HOOK)) {
                         regionsBuilder m = new regionsBuilder();
                         e.getWhoClicked().closeInventory();
                         e.getWhoClicked().openInventory(m.getMenu());
                     }
                 }
         }
+
+        if (e.getClickedInventory().getTitle().equalsIgnoreCase("Regions Magic Kingdom")) {
+            if (e.isRightClick() || e.isLeftClick()) {
+                e.setCancelled(true);
+            }
+        }
+
+
     }
 }

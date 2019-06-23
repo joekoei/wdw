@@ -15,7 +15,7 @@ public class regionsBuilder {
 
     public regionsBuilder() {
         menu = Bukkit.createInventory(null,36,"Regions Magic Kingdom");
-        final ItemStack ft = new ItemStack(Material.WOODEN_PICKAXE);
+        final ItemStack ft = new ItemStack(Material.WOODEN_HOE);
         final ItemMeta ftt = ft.getItemMeta();
         final ArrayList loreft = new ArrayList();
         loreft.add("See here all attractions in Frontier Land");
