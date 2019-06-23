@@ -1,10 +1,5 @@
 package eu.magicparksmc.magickingdom.tomorrowland;
 
-import eu.magicparksmc.magickingdom.status.StatusBuilder;
-
-import java.util.HashMap;
-import java.util.Map;
-
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -15,7 +10,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class SpaceMountainCommand implements CommandExecutor {
-	public static String spacemountain;
 
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
@@ -41,31 +35,6 @@ public class SpaceMountainCommand implements CommandExecutor {
 							m.getMenu().getItem(1).setType(Material.RED_CONCRETE);
 						}
 					}
-					Map<String, StatusBuilder> status = new HashMap<>();
-					String currentStatus = "closed";
-					status.put("opened", new StatusBuilder("opened"));
-					status.put("closed", new StatusBuilder("closed"));
-					status.put("maintenance", new StatusBuilder("maintenance"));
-					if (args[0].equalsIgnoreCase("status")) {
-						Bukkit.broadcastMessage(currentStatus);
-						if (!status.get(currentStatus).currentStatus) {
-							StatusBuilder s = new StatusBuilder(currentStatus);
-							if (spacemountain == null) {
-								spacemountain = s.getClosed();
-								changeStatus(s);
-								Bukkit.broadcastMessage(spacemountain + " 1");
-								Bukkit.broadcastMessage(currentStatus);
-							} else if (currentStatus == "closed") {
-								spacemountain = s.getOpened();
-								changeStatus(s);
-								Bukkit.broadcastMessage(spacemountain + " 2");
-							} else if (currentStatus == "opened") {
-								spacemountain = s.getClosed();
-								changeStatus(s);
-								Bukkit.broadcastMessage(spacemountain + " 3");
-							}
-						}
-					}
 				}
 			} else {
 				sender.sendMessage(
@@ -73,18 +42,5 @@ public class SpaceMountainCommand implements CommandExecutor {
 			}
 		}
 		return false;
-	}
-
-	private void changeStatus(StatusBuilder status) {
-		if (status == null) {
-			status.getClosed();
-			Bukkit.broadcastMessage(status + "");
-		} else if (status.toString() == ChatColor.RED + "Closed") {
-			status.getOpened();
-			Bukkit.broadcastMessage(status + "");
-		} else if (status.toString() == ChatColor.GREEN + "Opened") {
-			status.getClosed();
-			Bukkit.broadcastMessage(status + "");
-		}
 	}
 }

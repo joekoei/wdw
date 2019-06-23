@@ -1,7 +1,10 @@
 package nl.joekoei.core;
 
+import eu.magicparksmc.status.statusCommand;
+import eu.magicparksmc.status.statusListener;
 import nl.joekoei.ridecounter.*;
 
+import nl.joekoei.ridecounterGUI.RideCounterGUICommand;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -35,6 +38,8 @@ public final class Core extends JavaPlugin {
         this.getCommand("magicband").setExecutor(new MagicBandCommand());
         this.getCommand("control").setExecutor(new ControlCommand());
         this.getCommand("ride").setExecutor(new InfoCommand());
+        this.getCommand("statuscontrol").setExecutor(new statusCommand());
+        this.getCommand("ridecountermenu").setExecutor(new RideCounterGUICommand());
     }
 
     private void attractions() {
@@ -44,6 +49,7 @@ public final class Core extends JavaPlugin {
     private void Events() {
         Bukkit.getPluginManager().registerEvents(new MagicBandListener(), this);
         Bukkit.getPluginManager().registerEvents(new SpaceMountainListener(), this);
+        Bukkit.getPluginManager().registerEvents(new statusListener(),this);
     }
 
     @Override
