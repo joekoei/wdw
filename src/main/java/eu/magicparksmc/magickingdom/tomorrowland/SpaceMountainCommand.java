@@ -10,7 +10,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 public class SpaceMountainCommand implements CommandExecutor {
-
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("spacemountain")) {
@@ -28,7 +27,7 @@ public class SpaceMountainCommand implements CommandExecutor {
 							final ItemMeta openn = open.getItemMeta();
 							openn.setDisplayName(ChatColor.GREEN + "Opened");
 							open.setItemMeta(openn);
-							m.getMenu().setItem(1,open);
+							m.getMenu().setItem(1, open);
 							sender.sendMessage(m.getMenu().getItem(1).toString() + "  Na de set");
 
 						} else if (m.getMenu().getItem(1).getType() == Material.GREEN_CONCRETE) {
