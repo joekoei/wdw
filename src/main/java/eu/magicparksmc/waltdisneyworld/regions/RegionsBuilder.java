@@ -16,7 +16,7 @@ public class RegionsBuilder {
 		menu = Bukkit.createInventory(null, 36, "Area's - Magic Kingdom");
 		final ItemStack ft = new ItemStack(Material.WOODEN_HOE);
 		final ItemMeta ftt = ft.getItemMeta();
-		final ArrayList loreft = new ArrayList();
+		final ArrayList<String> loreft = new ArrayList<String>();
 		loreft.add("See here all attractions in Frontierland");
 		ftt.setDisplayName(ChatColor.GRAY + "Frontierland");
 		ftt.setLore(loreft);

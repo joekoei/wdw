@@ -15,7 +15,7 @@ public class ControlPanelBuilder {
 		menu = Bukkit.createInventory(null, 18, "Control Panels");
 		ItemStack i = new ItemStack(Material.ACACIA_BOAT);
 		ItemMeta m = i.getItemMeta();
-		ArrayList lore = new ArrayList();
+		ArrayList<String> lore = new ArrayList<String>();
 		lore.add("Control Panel");
 		m.setLore(lore);
 		m.setDisplayName("Splash Mountain");

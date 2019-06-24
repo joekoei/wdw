@@ -30,7 +30,7 @@ public class RideCounterGUICommand implements CommandExecutor {
 					// Space Mountain //
 					ItemStack m = new ItemStack(Material.DIAMOND_SWORD);
 					ItemMeta mm = m.getItemMeta();
-					ArrayList a = new ArrayList();
+					ArrayList<String> a = new ArrayList<String>();
 					a.add(ChatColor.RED + "" + element.getData().get("space_mountain") + " Rides");
 					mm.setDisplayName(ChatColor.RED + "Spacemountain");
 					mm.setLore(a);
@@ -51,7 +51,7 @@ public class RideCounterGUICommand implements CommandExecutor {
 					// Big Thunder Mountain //
 					ItemStack btm = new ItemStack(Material.DIAMOND_SWORD);
 					ItemMeta metabtm = btm.getItemMeta();
-					ArrayList btmride = new ArrayList();
+					ArrayList<String> btmride = new ArrayList<String>();
 					btmride.add(ChatColor.GRAY + "Total Rides: " + element.getData().get("big_thunder_mountain"));
 					metabtm.setDisplayName(ChatColor.GOLD + "Big Thunder Mountain");
 					metabtm.setLore(btmride);

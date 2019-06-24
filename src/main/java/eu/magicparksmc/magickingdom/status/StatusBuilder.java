@@ -14,7 +14,7 @@ public class StatusBuilder {
 
 	public StatusBuilder() {
 		menu = Bukkit.createInventory(null, 27, "Status Control Space Mountain");
-		final ArrayList lores = new ArrayList<>();
+		final ArrayList<String> lores = new ArrayList<>();
 		lores.add(ChatColor.GRAY + "Click here to change the status");
 
 		final ItemStack open = new ItemStack(Material.GREEN_CONCRETE);
@@ -37,7 +37,7 @@ public class StatusBuilder {
 
 		final ItemStack current = new ItemStack(Material.SIGN);
 		final ItemMeta currentt = current.getItemMeta();
-		final ArrayList currenttt = new ArrayList();
+		final ArrayList<String> currenttt = new ArrayList<String>();
 		StatusListener n = new StatusListener();
 		currenttt.add(ChatColor.GRAY + "Current status is => " + n.getSpacestatus());
 		currentt.setLore(currenttt);

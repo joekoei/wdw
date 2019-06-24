@@ -10,6 +10,7 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 public class StatusListener implements Listener {
 	public String spacestatus;
 
+	@SuppressWarnings("deprecation")
 	@EventHandler
 	public void InventoryClickEvent(InventoryClickEvent e) {
 		if (e.getClickedInventory().getTitle().equalsIgnoreCase("Status Control Space Mountain")) {
