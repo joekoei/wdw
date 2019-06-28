@@ -20,7 +20,8 @@ public class FrontierList {
 	}
 
 	enum frontierlandAttractions {
-		TOM_SAWYER_ISLAND("Tom Sawyer Island"), COUNTRY_BEAR_JAMBOREE("Country Bear Jamboree");
+		TOM_SAWYER_ISLAND("Tom Sawyer Island"),
+		COUNTRY_BEAR_JAMBOREE("Country Bear Jamboree");
 		String frontierlandName;
 
 		frontierlandAttractions(String name) {
@@ -29,12 +30,15 @@ public class FrontierList {
 	}
 
 	enum frontierlandRestaurants {
-		GOLDEN_OAK_OUTPOST("Golden Oak Outpost"),
-		PECOS_BILL_TALL_TALE_INN_AND_CAFE("Pecos Bill Tall Tale Inn and Café"), WESTWARD_HO("Westward Ho");
+		GOLDEN_OAK_OUTPOST("Golden Oak Outpost", "Restaurant"),
+		PECOS_BILL_TALL_TALE_INN_AND_CAFE("Pecos Bill Tall Tale Inn and Café", ""),
+		WESTWARD_HO("Westward Ho", "");
 		String frontierlandName;
+		String frontierlandDescription;
 
-		frontierlandRestaurants(String name) {
+		frontierlandRestaurants(String name, String description) {
 			this.frontierlandName = name;
+			this.frontierlandDescription = description;
 		}
 	}
 }

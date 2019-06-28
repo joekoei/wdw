@@ -1,7 +1,8 @@
 package nl.joekoei.core;
 
-import eu.magicparksmc.status.statusCommand;
 import eu.magicparksmc.status.statusListener;
+import eu.magicparksmc.waltdisneyworld.fastpass.FastpassCommand;
+import eu.magicparksmc.waltdisneyworld.fastpass.FastpassListener;
 import nl.joekoei.ridecounter.*;
 
 import nl.joekoei.ridecounterGUI.RideCounterGUICommand;
@@ -31,6 +32,7 @@ public final class Core extends JavaPlugin {
         Commands();
         Events();
         attractions();
+        Bukkit.broadcastMessage(this.getCommand("fastpass").toString() + "");
     }
 
     private void Commands() {
@@ -38,8 +40,8 @@ public final class Core extends JavaPlugin {
         this.getCommand("magicband").setExecutor(new MagicBandCommand());
         this.getCommand("control").setExecutor(new ControlCommand());
         this.getCommand("ride").setExecutor(new InfoCommand());
-        this.getCommand("statuscontrol").setExecutor(new statusCommand());
         this.getCommand("ridecountermenu").setExecutor(new RideCounterGUICommand());
+        this.getCommand("fastpass").setExecutor(new FastpassCommand());
     }
 
     private void attractions() {
@@ -50,6 +52,7 @@ public final class Core extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new MagicBandListener(), this);
         Bukkit.getPluginManager().registerEvents(new SpaceMountainListener(), this);
         Bukkit.getPluginManager().registerEvents(new statusListener(),this);
+        Bukkit.getPluginManager().registerEvents(new FastpassListener(), this);
     }
 
     @Override

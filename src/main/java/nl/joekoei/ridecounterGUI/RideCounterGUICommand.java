@@ -22,30 +22,37 @@ public class RideCounterGUICommand implements CommandExecutor {
             if(args.length == 1) {
                 if (args[0].equalsIgnoreCase("tomorrowland")) {
                     Player player = (Player) sender;
-                    final Inventory menu = Bukkit.createInventory(player, 9, "Tomorrowland Rides");
+                    final Inventory menu = Bukkit.createInventory(player, 27, "Tomorrowland Rides");
                     RideCounterElement element = Core.getRidecounterConfig().getByPlayer(Bukkit.getPlayer(player.getUniqueId()));
 
 
                     // Space Mountain //
-                    ItemStack m = new ItemStack(Material.DIAMOND_SWORD);
-                    ItemMeta mm = m.getItemMeta();
-                    ArrayList a = new ArrayList();
-                    a.add(ChatColor.RED + "" + element.getData().get("space_mountain") + " Rides");
-                    mm.setDisplayName(ChatColor.RED + "Spacemountain");
-                    mm.setLore(a);
-                    m.setItemMeta(mm);
+                    ItemStack spacem = new ItemStack(Material.DIAMOND_SWORD);
+                    ItemMeta spacemeta = spacem.getItemMeta();
+                    ArrayList space = new ArrayList();
+                    space.add(ChatColor.GRAY + "Total Rides: " + element.getData().get("space_mountain") + "");
+                    spacemeta.setDisplayName(ChatColor.GOLD + "Spacemountain");
+                    spacemeta.setLore(space);
+                    spacem.setItemMeta(spacemeta);
 
-                    //
+                    // People Mover //
+                    ItemStack pm = new ItemStack(Material.DIAMOND_SWORD);
+                    ItemMeta pmm = pm.getItemMeta();
+                    ArrayList pma = new ArrayList();
+                    pma.add(ChatColor.GRAY + "Total Rides: " + element.getData().get("people_mover") + "");
+                    pmm.setDisplayName(ChatColor.GOLD + "People Mover");
+                    pmm.setLore(pma);
+                    pm.setItemMeta(pmm);
 
 
-                    menu.setItem(0, m);
+                    menu.setItem(10, spacem);
+                    menu.setItem(12, pm);
 
                     player.openInventory(menu);
-                }
-                
-                if (args[0].equalsIgnoreCase("frontierland")) {
+
+                } else if (args[0].equalsIgnoreCase("frontierland")) {
                     Player player = (Player) sender;
-                    final Inventory menu = Bukkit.createInventory(player,9,"Frontier Land");
+                    final Inventory frontier_land = Bukkit.createInventory(player,27,"Frontier Land");
                     RideCounterElement element = Core.getRidecounterConfig().getByPlayer(Bukkit.getPlayer(player.getUniqueId()));
 
                     // Big Thunder Mountain //
@@ -57,9 +64,13 @@ public class RideCounterGUICommand implements CommandExecutor {
                     metabtm.setLore(btmride);
                     btm.setItemMeta(metabtm);
 
-                    menu.setItem(0,btm);
+                    frontier_land.setItem(10,btm);
+
+                    player.openInventory(frontier_land);
 
                 }
+            } else if (args.length == 0) {
+                sender.sendMessage(ChatColor.RED + "Frontierland, Tomorrowland");
             }
         }
 
