@@ -6,12 +6,11 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 
 public class SpaceMountainListener implements Listener {
-    @SuppressWarnings("deprecation")
+    @SuppressWarnings({ "deprecation", "unused" })
 	@EventHandler
     public void onInventoryClick(InventoryClickEvent e) {
         Inventory i = e.getClickedInventory();
-        SpaceMountainBuilder m = new SpaceMountainBuilder();
-
+		SpaceMountainBuilder m = new SpaceMountainBuilder();
         if (i.getTitle().equalsIgnoreCase("Space Mountain")) {
             if (e.isLeftClick() || e.isRightClick()) {
                 e.setCancelled(true);
