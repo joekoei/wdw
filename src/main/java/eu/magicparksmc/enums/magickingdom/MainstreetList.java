@@ -2,57 +2,75 @@ package eu.magicparksmc.enums.magickingdom;
 
 public class MainstreetList {
 	enum mainstreet {
-		CITY_HALL("City Hall"), HARMONY_BARBER_SHOP("Harmony Barber Shop"),
-		MAINSTREET_CHAMBER_OF_COMMERCE("Main Street Chamber of Commerce"), EMPORIUM("Emporium"),
-		MAINSTREET_CINEMA("Main Street Cinema"), THE_CHAPEAU("The Chapeau");
-
+		CITY_HALL("City Hall", "Guest Relations, Information and Lost & Found"),
+		HARMONY_BARBER_SHOP("Harmony Barber Shop", "Appointment needed"),
+		MAINSTREET_CHAMBER_OF_COMMERCE("Main Street Chamber of Commerce", "Merchandise Package Pickup"),
+		EMPORIUM("Emporium", "One-stop shopping destination for Disney Character gifts and Park souvenirs"),
+		MAINSTREET_CINEMA("Main Street Cinema", "Disney art, collectibles, figurines and more"),
+		THE_CHAPEAU("The Chapeau", "Personalize your headwear, tote bags and more with new deluxe embroidery");
 		String mainstreetName;
+		String mainstreetDescription;
 
-		mainstreet(String name) {
+		mainstreet(String name, String description) {
 			this.mainstreetName = name;
+			this.mainstreetDescription = description;
 		}
 	}
 
 	enum mainstreetRides {
-		WALT_DISNEY_WORLD_RAILROAD("Walt Disney World Railroad");
-
+		WALT_DISNEY_WORLD_RAILROAD("Walt Disney World Railroad",
+				"Get an up-close look and take advantage of one-of-a-kind photo opportunities as the train takes up temporary residence at the station on Main Street U.S.A");
 		String mainstreetName;
+		String mainstreetDescription;
 
-		mainstreetRides(String name) {
+		mainstreetRides(String name, String description) {
 			this.mainstreetName = name;
+			this.mainstreetDescription = description;
 		}
 	}
 
 	enum mainstreetAttractions {
-		TOWN_SQUARE_THEATER("Town Square Theater"), SORCERERS_OF_THE_MAGIC_KINGDOM("Sorcerers of the Magic Kingdom");
-
+		TOWN_SQUARE_THEATER("Town Square Theater", "Meet Mickey Mouse & Minnie Mouse & Tinkerbell"),
+		SORCERERS_OF_THE_MAGIC_KINGDOM("Sorcerers of the Magic Kingdom",
+				"Search for clues throughout the Park to defeat the Disney Villains");
 		String mainstreetName;
+		String mainstreetDescription;
 
-		mainstreetAttractions(String name) {
+		mainstreetAttractions(String name, String description) {
 			this.mainstreetName = name;
+			this.mainstreetDescription = description;
 		}
 	}
 
 	enum mainstreetRestaurants {
-		TONYS_TOWN_SQUARE_RESTAURANT("Tony's Town Square Restaurant"), MAINSTREET_BAKERY("Main Street Bakery"),
-		PLAZA_ICE_CREAM_PARLOR("Plaza Ice Cream Parlor"), THE_PLAZA_RESTAURANT("The Plaza Restaurant"),
-		CASEYS_CORNER("Casey's Corner"), THE_CRYSTAL_PALACE("The Crystal Palace, A Buffet with Character");
-
+		TONYS_TOWN_SQUARE_RESTAURANT("Tony's Town Square Restaurant", "House-made pastas, chicken parmesan and salads"),
+		MAINSTREET_BAKERY("Main Street Bakery",
+				"Starbucks espresso, house-made Disney pastries, Artisan sandwiches and salads"),
+		PLAZA_ICE_CREAM_PARLOR("Plaza Ice Cream Parlor",
+				"Hand-scooped ice cream, waffle-bowl sundaes and Mickey's Kitchen Sink Sundae"),
+		THE_PLAZA_RESTAURANT("The Plaza Restaurant", "Breakfast, lunch and dinner"),
+		CASEYS_CORNER("Casey's Corner", "Specialty all-beef hot dogs and corn dog nuggets"),
+		THE_CRYSTAL_PALACE("The Crystal Palace, A Buffet with Character", "Character buffet, American cuisine");
 		String mainstreetName;
+		String mainstreetDescription;
 
-		mainstreetRestaurants(String name) {
+		mainstreetRestaurants(String name, String description) {
 			this.mainstreetName = name;
+			this.mainstreetDescription = description;
 		}
 	}
 
 	enum magickingdomShows {
-		STREET_PARTY("Move it! Shake it! MousekeDance it! Street Party"),
-		ROYAL_FRIENDSHIP_FAIRE("Mickey's Royal Friendship Faire"), PARADE("Disney's Festival of Fantasy Parade"),
-		HAPPILY_EVER_AFTER("Happily Ever Afer");
+		STREET_PARTY("Move it! Shake it! MousekeDance it! Street Party", "Check the Times Guide for more information"),
+		ROYAL_FRIENDSHIP_FAIRE("Mickey's Royal Friendship Faire", "Check the Times Guide for more information"),
+		PARADE("Disney's Festival of Fantasy Parade", "Check the Times Guide for more information"),
+		HAPPILY_EVER_AFTER("Happily Ever Afer", "Check the Times Guide for more information");
 		String mainstreetName;
+		String mainstreetDescription;
 
-		magickingdomShows(String name) {
+		magickingdomShows(String name, String description) {
 			this.mainstreetName = name;
+			this.mainstreetDescription = description;
 		}
 	}
 
